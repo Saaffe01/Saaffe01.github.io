@@ -5,214 +5,354 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio website for Saaffe Algarib, a software developer based in Phoenix, Arizona."
+      content="Animated developer portfolio concept for Saaffe Algarib."
     />
-    <title>Saaffe Algarib | Developer Portfolio</title>
+    <title>Saaffe Algarib — Developer & Builder</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="CSS/portfolio.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css?v=4" />
   </head>
-  <body class="bg-slate-50 text-slate-900">
-    <header class="site-header sticky top-0 z-50">
-      <nav
-        class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4"
-        aria-label="Main navigation"
-      >
-        <a href="#top" class="text-lg font-extrabold tracking-tight">
-          Saaffe Algarib
-        </a>
-        <div class="flex items-center gap-5 text-sm font-semibold">
-          <a href="#about" class="nav-link">About</a>
-          <a href="#projects" class="nav-link">Projects</a>
-          <a href="#contact" class="nav-link">Contact</a>
-        </div>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand magnetic" href="#top" aria-label="Back to top">
+        <span class="brand-mark">SA</span>
+        <span class="brand-copy">Saaffe<br />Algarib</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#code-summary">Journey</a>
+        <a href="#contact">Contact</a>
       </nav>
+      <a class="availability magnetic" href="mailto:SaaffeAlgarib@gmail.com">
+        <span class="status-dot"></span>
+        Available for work
+      </a>
     </header>
 
     <main id="top">
-      <section id="about" class="border-b border-slate-200 bg-white">
-        <div
-          class="mx-auto grid max-w-6xl items-center gap-10 px-6 py-20 md:grid-cols-[1.15fr_0.85fr]"
-        >
+      <section class="hero">
+        <div class="hero-orb orb-one" aria-hidden="true"></div>
+        <div class="hero-orb orb-two" aria-hidden="true"></div>
+
+        <p class="eyebrow hero-reveal">
+          <span>01</span>
+          Phoenix-based software developer
+        </p>
+
+        <h1 aria-label="I make useful things for the web">
+          <span class="hero-line"><span>I make useful</span></span>
+          <span class="hero-line accent-line"><span>things <em>move.</em></span></span>
+        </h1>
+
+        <div class="hero-bottom hero-reveal">
+          <p class="hero-intro">
+            I build thoughtful digital experiences with clean code,
+            practical problem-solving, and just enough personality.
+          </p>
+          <a class="round-link magnetic" href="#work">
+            <span>See my work</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 4v16M5 13l7 7 7-7" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="code-card hero-reveal" aria-hidden="true">
+          <div class="code-card-top">
+            <span></span><span></span><span></span>
+            <p>currently_building.js</p>
+          </div>
+          <pre><code><b>const</b> developer = {
+  name: <i>"Saaffe"</i>,
+  focus: [<i>"web"</i>, <i>"C#"</i>, <i>".NET"</i>],
+  mindset: <i>"always learning"</i>
+};</code></pre>
+        </div>
+      </section>
+
+      <section class="marquee-section" aria-label="Technical skills">
+        <div class="marquee">
+          <div class="marquee-track">
+            <span>JavaScript</span><b>✦</b><span>C#</span><b>✦</b>
+            <span>.NET</span><b>✦</b><span>HTML + CSS</span><b>✦</b>
+            <span>SQL</span><b>✦</b><span>GSAP</span><b>✦</b>
+            <span>JavaScript</span><b>✦</b><span>C#</span><b>✦</b>
+            <span>.NET</span><b>✦</b><span>HTML + CSS</span><b>✦</b>
+            <span>SQL</span><b>✦</b><span>GSAP</span><b>✦</b>
+          </div>
+        </div>
+      </section>
+
+      <section class="work section-pad" id="work">
+        <div class="section-heading reveal">
           <div>
-            <p class="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-blue-700">
-              Developer Portfolio
-            </p>
-            <h1 class="max-w-3xl text-4xl font-extrabold leading-tight md:text-6xl">
-              Building clean, useful web and C# projects.
-            </h1>
-            <div class="mt-6 space-y-4 text-lg leading-8 text-slate-600">
-              <p>
-                I am a passionate software developer based in Phoenix, Arizona.
-                As a future graduate of The Tech Academy, I have experience
-                building web projects, console applications, and full-stack
-                course projects while continuing to grow my technical stack.
-              </p>
-              <p>
-                I enjoy solving problems, learning new tools, and creating
-                projects that are organized, readable, and easy to use.
-              </p>
-            </div>
-            <div class="mt-8 flex flex-wrap gap-3">
-              <a href="#projects" class="primary-button">View Projects</a>
-              <a href="#contact" class="secondary-button">Contact Me</a>
-            </div>
+            <p class="eyebrow"><span>02</span>Selected work</p>
+            <h2>Things I’ve<br />brought to life.</h2>
           </div>
+          <p>
+            A few projects that show how I think, build, and turn an idea into
+            something people can actually use.
+          </p>
+        </div>
 
-          <div class="hero-media">
-            <img
-              src="images/code.jpg"
-              alt="Code editor showing a software project"
-              class="h-full w-full object-cover"
-            />
-          </div>
+        <div class="project-grid">
+          <button class="project-card project-large" type="button" data-project="sonoran">
+            <div class="project-visual pool-visual">
+              <div class="browser-frame">
+                <div class="browser-bar"><i></i><i></i><i></i></div>
+                <div class="pool-screen">
+                  <p>SONORAN</p>
+                  <strong>Pool Decks</strong>
+                  <span>Arizona outdoor living</span>
+                </div>
+              </div>
+              <span class="project-number">01</span>
+            </div>
+            <div class="project-meta">
+              <div>
+                <p>Featured build · 2026</p>
+                <h3>Sonoran Pool Decks</h3>
+              </div>
+              <span class="project-arrow">↗</span>
+            </div>
+            <ul>
+              <li>Web design</li>
+              <li>Responsive UI</li>
+              <li>JavaScript</li>
+            </ul>
+            <span class="open-prompt">Open project preview</span>
+          </button>
+
+          <button class="project-card" type="button" data-project="csharp">
+            <div class="project-visual dotnet-visual">
+              <div class="terminal-window">
+                <div class="terminal-top">C:\Saaffe\Projects</div>
+                <p><span>›</span> dotnet run</p>
+                <p class="terminal-success">Build succeeded.</p>
+                <p><span>›</span> _</p>
+              </div>
+              <span class="floating-label">C# / .NET</span>
+              <span class="project-number">02</span>
+            </div>
+            <div class="project-meta">
+              <div>
+                <p>Code collection</p>
+                <h3>C# + .NET Projects</h3>
+              </div>
+              <span class="project-arrow">↗</span>
+            </div>
+            <ul>
+              <li>OOP</li>
+              <li>Entity Framework</li>
+              <li>SQL</li>
+            </ul>
+            <span class="open-prompt">Open project preview</span>
+          </button>
+
+          <button class="project-card" type="button" data-project="frontend">
+            <div class="project-visual web-visual">
+              <div class="shape shape-a"></div>
+              <div class="shape shape-b"></div>
+              <div class="shape shape-c"></div>
+              <p>WEB<br />LAB</p>
+              <span class="project-number">03</span>
+            </div>
+            <div class="project-meta">
+              <div>
+                <p>Frontend experiments</p>
+                <h3>HTML + CSS Projects</h3>
+              </div>
+              <span class="project-arrow">↗</span>
+            </div>
+            <ul>
+              <li>Responsive</li>
+              <li>Bootstrap</li>
+              <li>UI design</li>
+            </ul>
+            <span class="open-prompt">Open project preview</span>
+          </button>
         </div>
       </section>
 
-      <section class="bg-slate-50 py-16">
-        <div class="mx-auto max-w-6xl px-6">
-          <h2 class="text-3xl font-extrabold">Technical Toolkit</h2>
-          <div id="skills-list" class="mt-8 flex flex-wrap gap-3"></div>
-        </div>
-      </section>
-
-      <section id="projects" class="bg-white py-20">
-        <div class="mx-auto max-w-6xl px-6">
-          <div class="mb-10 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+      <section class="about section-pad" id="about">
+        <div class="about-sticky">
+          <p class="eyebrow reveal"><span>03</span>A little about me</p>
+          <div class="about-grid">
             <div>
-              <p class="text-sm font-bold uppercase tracking-[0.18em] text-blue-700">
-                Featured Work
-              </p>
-              <h2 class="mt-2 text-3xl font-extrabold">Projects</h2>
+              <h2 class="reveal">
+                Curious by nature.<br />
+                <span>Practical by design.</span>
+              </h2>
+              <div class="portrait-reserve reveal" aria-label="Reserved space for a future portrait">
+                <div class="portrait-monogram">SA</div>
+                <div class="portrait-caption">
+                  <span>Portrait reserved</span>
+                  <p>A professional photo will live here when the time is right.</p>
+                </div>
+                <span class="corner-note">Future me →</span>
+              </div>
             </div>
-            <a
-              href="https://github.com/Saaffe01"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-sm font-bold text-blue-700 hover:text-blue-900"
-            >
-              View GitHub Profile
-            </a>
+            <div class="about-copy reveal">
+              <p>
+                I’m Saaffe, a developer based in Phoenix, Arizona. I enjoy the
+                point where logic and creativity meet: taking a messy problem,
+                finding the shape inside it, and building a clear solution.
+              </p>
+              <p>
+                My foundation spans frontend development, C#, .NET, SQL, and
+                full-stack coursework. What I bring beyond the stack is care:
+                for the details, the person using the thing, and the team
+                maintaining it next.
+              </p>
+              <div class="principles">
+                <div><span>01</span><p>Build for humans</p></div>
+                <div><span>02</span><p>Keep learning</p></div>
+                <div><span>03</span><p>Make it clear</p></div>
+              </div>
+              <div class="resume-reserve">
+                <div>
+                  <span class="reserve-label">Résumé</span>
+                  <h3>The next chapter is being written.</h3>
+                  <p>
+                    This space is ready for a polished résumé once the live
+                    project and final experience details are complete.
+                  </p>
+                </div>
+                <button type="button" disabled>Résumé coming soon</button>
+              </div>
+            </div>
           </div>
-
-          <div
-            id="project-list"
-            class="grid gap-6 md:grid-cols-2 xl:grid-cols-3"
-          ></div>
         </div>
       </section>
 
-      <section id="contact" class="bg-slate-50 py-20">
-        <div
-          class="mx-auto grid max-w-5xl overflow-hidden border border-slate-200 bg-white shadow-xl md:grid-cols-[0.85fr_1.15fr]"
-        >
-          <aside class="bg-blue-700 p-8 text-white md:p-10">
-            <h2 class="text-3xl font-extrabold">Let's talk</h2>
-            <p class="mt-4 text-blue-100">
-              I am open to new projects, learning opportunities, and feedback on
-              my work.
-            </p>
-
-            <div class="mt-10 space-y-5 text-sm font-semibold">
-              <p>Phoenix, AZ</p>
-              <a href="mailto:SaaffeAlgarib@gmail.com" class="contact-link">
-                SaaffeAlgarib@gmail.com
-              </a>
-            </div>
-
-            <div class="mt-10 flex flex-col gap-3">
-              <a
-                href="https://www.linkedin.com/in/saaffe-algarib-987371199/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="profile-link"
-              >
-                LinkedIn Profile
-              </a>
-              <a
-                href="https://github.com/Saaffe01"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="profile-link"
-              >
-                GitHub Projects
-              </a>
-            </div>
-          </aside>
-
-          <div class="p-8 md:p-10">
-            <form id="contact-form" class="space-y-6">
-              <div class="grid gap-6 md:grid-cols-2">
-                <div>
-                  <label for="name" class="form-label">Name</label>
-                  <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    placeholder="Your name"
-                    autocomplete="name"
-                    required
-                    class="form-input"
-                  />
-                </div>
-                <div>
-                  <label for="email" class="form-label">Email</label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="email@example.com"
-                    autocomplete="email"
-                    required
-                    class="form-input"
-                  />
-                </div>
-              </div>
-              <div>
-                <label for="subject" class="form-label">Subject</label>
-                <input
-                  id="subject"
-                  name="subject"
-                  type="text"
-                  placeholder="Project inquiry"
-                  required
-                  class="form-input"
-                />
-              </div>
-              <div>
-                <label for="message" class="form-label">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="5"
-                  placeholder="How can I help you?"
-                  required
-                  class="form-input"
-                ></textarea>
-              </div>
-              <button type="submit" class="primary-button">Open Email</button>
-            </form>
+      <section class="journey section-pad" id="code-summary">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span>04</span>Code Summary</p>
+            <h2>A story still<br />in motion.</h2>
           </div>
+          <p>
+            I’m in the homestretch of a live project. The deeper technical
+            stories, screenshots, and lessons will unlock here after the work
+            is complete.
+          </p>
+        </div>
+
+        <div class="journey-board">
+          <article class="journey-card reveal">
+            <span class="journey-index">01</span>
+            <div class="journey-icon">⌁</div>
+            <p class="journey-kicker">Foundation</p>
+            <h3>Learning the language of software</h3>
+            <p>Frontend fundamentals, C#, object-oriented thinking, databases, and clean structure.</p>
+            <span class="journey-status complete">Built</span>
+          </article>
+          <article class="journey-card active reveal">
+            <span class="journey-index">02</span>
+            <div class="journey-icon pulse-icon">●</div>
+            <p class="journey-kicker">Right now</p>
+            <h3>Turning coursework into teamwork</h3>
+            <p>Working through real tickets, collaboration, debugging, and the rhythm of a live project.</p>
+            <span class="journey-status">In progress</span>
+          </article>
+          <article class="journey-card locked reveal">
+            <span class="journey-index">03</span>
+            <div class="journey-icon">✦</div>
+            <p class="journey-kicker">Coming next</p>
+            <h3>The complete Code Summary</h3>
+            <p>Technical stories, selected screenshots, decisions, challenges, and lessons worth sharing.</p>
+            <span class="journey-status">Unlocks soon</span>
+          </article>
+        </div>
+
+        <div class="currently reveal">
+          <p>Current signal</p>
+          <div class="signal-grid">
+            <span><small>Building</small>Live project stories</span>
+            <span><small>Learning</small>Team delivery</span>
+            <span><small>Next up</small>Code Summary</span>
+            <span><small>Based in</small>Phoenix, Arizona</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-pad" id="contact">
+        <div class="contact-orbit" aria-hidden="true">
+          <span>LET’S BUILD SOMETHING GOOD · LET’S BUILD SOMETHING GOOD · </span>
+        </div>
+        <p class="eyebrow reveal"><span>05</span>Start a conversation</p>
+        <h2 class="reveal">Have an idea?<br /><em>Let’s talk.</em></h2>
+        <a class="email-link magnetic reveal" href="mailto:SaaffeAlgarib@gmail.com">
+          SaaffeAlgarib@gmail.com <span>↗</span>
+        </a>
+        <div class="contact-footer reveal">
+          <p>Phoenix, Arizona · MST</p>
+          <div>
+            <a href="https://github.com/Saaffe01" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/saaffe-algarib-987371199/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          </div>
+          <p>© <span id="year"></span> Saaffe Algarib</p>
         </div>
       </section>
     </main>
 
-    <footer class="border-t border-slate-200 bg-white px-6 py-8 text-center">
-      <p class="font-semibold">Copyright 2026 | Saaffe Algarib</p>
-      <p class="mt-2 text-sm text-slate-500">
-        Phoenix, AZ | <a href="mailto:SaaffeAlgarib@gmail.com">SaaffeAlgarib@gmail.com</a>
-      </p>
-    </footer>
-
-    <div id="success-toast" class="toast" role="status" aria-live="polite">
-      Opening your email app with the message details.
+    <div
+      class="project-dialog"
+      id="project-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="dialog-title"
+      hidden
+    >
+      <div class="dialog-shell">
+        <button class="dialog-close magnetic" type="button" aria-label="Close project preview">×</button>
+        <div class="dialog-visual" id="dialog-visual">
+          <span class="dialog-number" id="dialog-number">01</span>
+          <p id="dialog-mark">SONORAN<br />POOL DECKS</p>
+        </div>
+        <div class="dialog-content">
+          <div class="dialog-header">
+            <div>
+              <p class="eyebrow"><span id="dialog-label">Featured build</span>Project preview</p>
+              <h2 id="dialog-title">Sonoran Pool Decks</h2>
+            </div>
+            <span class="dialog-status" id="dialog-status">Concept build</span>
+          </div>
+          <p class="dialog-lead" id="dialog-lead"></p>
+          <div class="dialog-story">
+            <div>
+              <span>The goal</span>
+              <p id="dialog-goal"></p>
+            </div>
+            <div>
+              <span>What I focused on</span>
+              <p id="dialog-focus"></p>
+            </div>
+            <div>
+              <span>What it shows</span>
+              <p id="dialog-outcome"></p>
+            </div>
+          </div>
+          <div class="dialog-bottom">
+            <ul id="dialog-tech"></ul>
+            <a id="dialog-link" href="#" target="_blank" rel="noopener noreferrer">
+              Continue to project <span>↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <script src="portfolio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js?v=2"></script>
   </body>
 </html>
