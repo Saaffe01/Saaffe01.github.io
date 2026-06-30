@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="stylesheet" href="styles.css?v=5" />
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
@@ -104,29 +104,35 @@
         </div>
 
         <div class="project-grid">
-          <button class="project-card project-large" type="button" data-project="sonoran">
-            <div class="project-visual pool-visual">
-              <div class="browser-frame">
-                <div class="browser-bar"><i></i><i></i><i></i></div>
-                <div class="pool-screen">
-                  <p>SONORAN</p>
-                  <strong>Pool Decks</strong>
-                  <span>Arizona outdoor living</span>
+          <button class="project-card project-large" type="button" data-project="theatre">
+            <div class="project-visual case-study-visual">
+              <div class="case-study-window">
+                <div class="browser-bar"><i></i><i></i><i></i><span>case-study.md</span></div>
+                <div class="case-study-screen">
+                  <div class="case-study-title">
+                    <p>THEATRE<span>CMS</span></p>
+                    <strong>Rental History</strong>
+                    <small>Live project case study</small>
+                  </div>
+                  <div class="story-stack" aria-hidden="true">
+                    <span>01 · UI</span><span>02 · CRUD</span><span>03 · RAZOR</span>
+                    <span>04 · MVC</span><span>05 · JS</span>
+                  </div>
                 </div>
               </div>
               <span class="project-number">01</span>
             </div>
             <div class="project-meta">
               <div>
-                <p>Featured build · 2026</p>
-                <h3>Sonoran Pool Decks</h3>
+                <p>Completed live project · 2026</p>
+                <h3>TheatreCMS Rental History</h3>
               </div>
               <span class="project-arrow">↗</span>
             </div>
             <ul>
-              <li>Web design</li>
-              <li>Responsive UI</li>
-              <li>JavaScript</li>
+              <li>ASP.NET MVC</li>
+              <li>C#</li>
+              <li>Entity Framework</li>
             </ul>
             <span class="open-prompt">Open project preview</span>
           </button>
@@ -191,13 +197,28 @@
                 Curious by nature.<br />
                 <span>Practical by design.</span>
               </h2>
-              <div class="portrait-reserve reveal" aria-label="Reserved space for a future portrait">
-                <div class="portrait-monogram">SA</div>
-                <div class="portrait-caption">
-                  <span>Portrait reserved</span>
-                  <p>A professional photo will live here when the time is right.</p>
+              <div class="developer-profile reveal" aria-label="Saaffe's developer profile">
+                <div class="profile-topline">
+                  <span>Developer profile</span>
+                  <span>Phoenix · AZ</span>
                 </div>
-                <span class="corner-note">Future me →</span>
+                <div class="profile-core">
+                  <div class="profile-orbit" aria-hidden="true">
+                    <span class="profile-initials">SA</span>
+                    <i></i><i></i><i></i>
+                  </div>
+                  <p>Thoughtful code.<br /><em>Practical outcomes.</em></p>
+                </div>
+                <div class="work-loop" aria-label="How I work">
+                  <span><b>01</b>Understand</span>
+                  <span><b>02</b>Build</span>
+                  <span><b>03</b>Test</span>
+                  <span><b>04</b>Refine</span>
+                </div>
+                <p class="profile-note">
+                  I do my best work where curiosity, clear communication, and
+                  steady problem-solving overlap.
+                </p>
               </div>
             </div>
             <div class="about-copy reveal">
@@ -222,8 +243,8 @@
                   <span class="reserve-label">Résumé</span>
                   <h3>The next chapter is being written.</h3>
                   <p>
-                    This space is ready for a polished résumé once the live
-                    project and final experience details are complete.
+                    I’m refining the final details now. A downloadable résumé
+                    will live here when it is ready.
                   </p>
                 </div>
                 <button type="button" disabled>Résumé coming soon</button>
@@ -237,12 +258,12 @@
         <div class="section-heading reveal">
           <div>
             <p class="eyebrow"><span>04</span>Code Summary</p>
-            <h2>A story still<br />in motion.</h2>
+            <h2>From stories<br />to a system.</h2>
           </div>
           <p>
-            I’m in the homestretch of a live project. The deeper technical
-            stories, screenshots, and lessons will unlock here after the work
-            is complete.
+            My live project is complete. The full case study captures the
+            features I delivered, the decisions behind them, and how I grew
+            while contributing to an established ASP.NET MVC application.
           </p>
         </div>
 
@@ -250,35 +271,35 @@
           <article class="journey-card reveal">
             <span class="journey-index">01</span>
             <div class="journey-icon">⌁</div>
-            <p class="journey-kicker">Foundation</p>
-            <h3>Learning the language of software</h3>
-            <p>Frontend fundamentals, C#, object-oriented thinking, databases, and clean structure.</p>
-            <span class="journey-status complete">Built</span>
+            <p class="journey-kicker">Understand</p>
+            <h3>Entering an existing codebase</h3>
+            <p>Learned the project architecture, conventions, shared styles, and acceptance criteria before making targeted changes.</p>
+            <span class="journey-status complete">Complete</span>
           </article>
           <article class="journey-card active reveal">
             <span class="journey-index">02</span>
             <div class="journey-icon pulse-icon">●</div>
-            <p class="journey-kicker">Right now</p>
-            <h3>Turning coursework into teamwork</h3>
-            <p>Working through real tickets, collaboration, debugging, and the rhythm of a live project.</p>
-            <span class="journey-status">In progress</span>
+            <p class="journey-kicker">Deliver</p>
+            <h3>Five stories, one cohesive module</h3>
+            <p>Built Rental History features across models, controllers, Razor views, UI styling, sorting, and CRUD workflows.</p>
+            <span class="journey-status">Delivered</span>
           </article>
           <article class="journey-card locked reveal">
             <span class="journey-index">03</span>
             <div class="journey-icon">✦</div>
-            <p class="journey-kicker">Coming next</p>
+            <p class="journey-kicker">Reflect</p>
             <h3>The complete Code Summary</h3>
-            <p>Technical stories, selected screenshots, decisions, challenges, and lessons worth sharing.</p>
-            <span class="journey-status">Unlocks soon</span>
+            <p>Documented each contribution, challenge, solution, technical highlight, and lesson in a public case study.</p>
+            <span class="journey-status">Published</span>
           </article>
         </div>
 
         <div class="currently reveal">
           <p>Current signal</p>
           <div class="signal-grid">
-            <span><small>Building</small>Live project stories</span>
-            <span><small>Learning</small>Team delivery</span>
-            <span><small>Next up</small>Code Summary</span>
+            <span><small>Completed</small>5 Azure DevOps stories</span>
+            <span><small>Practiced</small>Agile / Scrum delivery</span>
+            <span><small>Published</small>Code Summary</span>
             <span><small>Based in</small>Phoenix, Arizona</span>
           </div>
         </div>
@@ -316,13 +337,13 @@
         <button class="dialog-close magnetic" type="button" aria-label="Close project preview">×</button>
         <div class="dialog-visual" id="dialog-visual">
           <span class="dialog-number" id="dialog-number">01</span>
-          <p id="dialog-mark">SONORAN<br />POOL DECKS</p>
+          <p id="dialog-mark">THEATRE<br />CMS</p>
         </div>
         <div class="dialog-content">
           <div class="dialog-header">
             <div>
               <p class="eyebrow"><span id="dialog-label">Featured build</span>Project preview</p>
-              <h2 id="dialog-title">Sonoran Pool Decks</h2>
+              <h2 id="dialog-title">TheatreCMS Rental History</h2>
             </div>
             <span class="dialog-status" id="dialog-status">Concept build</span>
           </div>
@@ -353,6 +374,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=3"></script>
   </body>
 </html>

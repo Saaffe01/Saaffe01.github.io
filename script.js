@@ -3,24 +3,24 @@ document.getElementById("year").textContent = new Date().getFullYear();
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const projectStories = {
-  sonoran: {
+  theatre: {
     number: "01",
-    label: "Featured build",
-    title: "Sonoran Pool Decks",
-    status: "Concept build",
+    label: "Completed live project",
+    title: "TheatreCMS Rental History",
+    status: "Case study published",
     theme: "blue",
-    mark: "SONORAN<br>POOL DECKS",
+    mark: "THEATRE<br>CMS",
     lead:
-      "A warm, Arizona-inspired web concept created to make a local outdoor-living brand feel trustworthy, clear, and easy to explore.",
+      "A detailed record of my contributions to a collaborative ASP.NET MVC application, completed through five Azure DevOps stories in an Agile team environment.",
     goal:
-      "Turn a service business into a confident digital presence that quickly communicates quality and location.",
+      "Build and refine the Rental History module inside an established codebase while meeting defined acceptance criteria.",
     focus:
-      "Visual hierarchy, responsive composition, approachable copy, and a clear path from curiosity to contact.",
+      "MVC architecture, CRUD workflows, Entity Framework, Razor views, controller logic, UI refinement, and JavaScript/jQuery behavior.",
     outcome:
-      "A polished business-facing concept that demonstrates design judgment alongside practical frontend execution.",
-    tech: ["HTML", "CSS", "JavaScript", "Responsive UI"],
-    link: "https://github.com/Saaffe01",
-    linkText: "Visit GitHub profile",
+      "My ability to understand existing software, deliver across the stack, collaborate through pull requests, and reflect clearly on technical decisions.",
+    tech: ["ASP.NET MVC", "C#", "Entity Framework", "Razor", "JavaScript", "Agile/Scrum"],
+    link: "https://github.com/Saaffe01/theatrecms-rental-history-case-study",
+    linkText: "Read the full case study",
   },
   csharp: {
     number: "02",
@@ -36,7 +36,7 @@ const projectStories = {
     focus:
       "Object-oriented design, interfaces, polymorphism, exception handling, Entity Framework, and SQL-backed thinking.",
     outcome:
-      "A visible record of technical growth—and the foundation supporting my current live-project work.",
+      "A visible record of technical growth—and the foundation that supported my completed live-project work.",
     tech: ["C#", ".NET", "OOP", "Entity Framework", "SQL"],
     link: "https://github.com/Saaffe01/The-Tech-Academy-Basic-C-Sharp-Projects.",
     linkText: "Continue to repository",
