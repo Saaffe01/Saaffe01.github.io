@@ -988,17 +988,38 @@ h1 em,
   line-height: 1.6;
 }
 
-.resume-reserve button {
-  width: 100%;
+.resume-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
   margin-top: 22px;
+}
+
+.resume-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 14px;
-  border: 1px dashed #77776d;
+  border: 1px solid #77776d;
   background: transparent;
-  color: #8d8c83;
+  color: var(--paper);
   font-family: var(--mono);
   font-size: 0.68rem;
   text-transform: uppercase;
-  cursor: not-allowed;
+  transition: border-color 0.25s ease, color 0.25s ease, background 0.25s ease;
+}
+
+.resume-links a:hover,
+.resume-links a:focus-visible {
+  border-color: var(--coral);
+  background: var(--coral);
+  color: var(--ink);
+}
+
+@media (max-width: 520px) {
+  .resume-links {
+    grid-template-columns: 1fr;
+  }
 }
 
 .journey {
